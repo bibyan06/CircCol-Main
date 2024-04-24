@@ -84,12 +84,12 @@
                     <div class="row d_flex">
                         <div class="col-md-4">
                             <ul class="conta_icon d_none1">
-                                <li><a href="#"><img src="images/circol logo.png" alt="#" style="width: 700px; height:20px auto;"/></a></li>
+                                <li><a href="#"><img src="images/circol logo.png" alt="#" style="width: 200px; height:10px auto;"/></a></li>
                             </ul>
                         </div>
                         <div style="margin-left: 27em;" class="col-md-4">
                             <ul class="right_icon d_none1">
-                                <li><a href="#"><img src="images/shopping.png" alt="#"/></a></li>
+                                <li><a href="cart.php"><img src="images/shopping.png" alt="#"/></a></li>
                             </ul>
                         </div>
                     </div>
@@ -140,6 +140,142 @@
         </div>
     </header>
     <!-- end header -->
+     <!-- project section -->
+     <div id="project" class="project">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Featured Merchandise</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+            <div class="product_main">
+                <div class="project_box">
+                <div class="dark_white_bg" ><img  src="images/shoes2.png" alt="#"/></div>
+                <h3 >Short Openwork Cardigan</h3>
+                <h4>Php 320.00</h4>
+                <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>      
+            </div>
+                  <div class="project_box" id="featured">
+                     <div class="dark_white_bg" ><img  src="images/shoes2.png" alt="#"/></div>
+                     <h3 >Short Openwork Cardigan</h3>
+                     <h4>Php 320.00</h4>
+                     <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <a href="#"><i class="fas fa-cart-plus cart"></i></a>
+                    </div>
+                   
+                  </div>
+                  
+                  <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/shoes3.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+              
+                  <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/shoes4.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+              
+                  <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/shoes5.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+              
+            
+                  <div class="project_box ">
+                     <div class="dark_white_bg" ><img  src="images/tisat1.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+              
+                  <div class="project_box ">
+                     <div class="dark_white_bg" ><img  src="images/tisat2.png" alt="#"/></div>
+                     <h3 >Short Openwork Cardigan $120.00</h3>
+                  </div>
+               
+                  <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/tisat3.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+               
+                  <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/tisat4.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+               
+                  <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/tisat5.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+               
+            
+                  <div class="project_box ">
+                     <div class="dark_white_bg" ><img  src="images/mix1.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+               
+                  <div class="project_box ">
+                     <div class="dark_white_bg" ><img  src="images/mix2.png" alt="#"/></div>
+                     <h3 >Short Openwork Cardigan $120.00</h3>
+                  </div>
+               
+                  <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/mix3.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+              
+                  <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/mix4.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+               
+                  <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/mix5.png" alt="#"/></div>
+                     <h3>Short Openwork Cardigan $120.00</h3>
+                  </div>
+              
+               <div class="col-md-12">
+                  <a class="read_more" href="#">See More</a>
+               </div>
+            </div>
+            </div>
+         </div>
+      </div>
+      <!-- end project section -->
+
+       <!-- Variation Modal -->
+        <div class="modal fade" id="variationModal" tabindex="-1" role="dialog" aria-labelledby="variationModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="variationModalLabel">Choose Variation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Variation options and add to cart button -->
+                        <img id="modalImage" src="" alt="Chosen Photo">
+                        <select id="variationSelect">
+                            <!-- Variation options will be dynamically added here -->
+                        </select>
+                        <h4 id="modalPrice"></h4> <!-- Adjusted to display price -->
+                        <input type="number" id="quantityInput" value="1" min="1">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="addToCartBtn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- footer -->
     <footer>
         <div class="footer">
@@ -153,5 +289,78 @@
         </div>
     </footer>
     <!-- end footer -->
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        // Function to populate variation options in the modal and update image
+        function populateVariations(variations) {
+            var select = $('#variationSelect');
+            select.empty();
+            $.each(variations, function(index, variation) {
+                select.append($('<option>', {
+                    value: variation.id,
+                    text: variation.name
+                }));
+            });
+
+            // Event listener for variation select change
+            select.change(function() {
+                // Get the selected variation
+                var selectedVariation = $(this).val();
+                // Get the image source corresponding to the selected variation
+                var imgSrc = variations[selectedVariation - 1].imageSrc; // Adjust index since ids start from 1
+                // Update the modal image source
+                $('#modalImage').attr('src', imgSrc);
+
+                // Fetch and display the price of the chosen product
+
+                
+                var selectedPrice = variations[selectedVariation - 1].price;
+                $('#modalPrice').text('Price: ' + selectedPrice);
+            });
+        }
+
+        // Mock variations data (replace with your actual data)
+        var variationsData = [
+            { id: 1, name: 'Black', imageSrc: 'images/black_shoes.png', price: 'Php 320.00' },
+            { id: 2, name: 'Blue', imageSrc: 'images/blue_shoes.png', price: 'Php 350.00' },
+            { id: 3, name: 'White', imageSrc: 'images/white_shoes.png', price: 'Php 300.00' }
+        ];
+
+        // Event listener for variation button click
+        $('.variation_btn').click(function() {
+            populateVariations(variationsData);
+            // Get the image source of the selected project box and display it in the modal
+            var imgSrc = $(this).closest('.project_box').find('img').attr('src');
+            $('#modalImage').attr('src', imgSrc);
+        });
+
+        // Event listener for add to cart button click
+        $('.variation_btn').click(function() {
+            var selectedVariation = $('#variationSelect').val();
+            // Fetch the price of the chosen variation
+            var selectedPrice = variationsData[selectedVariation - 1].price;
+            // Update the price in the corresponding product box
+            $(this).siblings('h4').text(selectedPrice);
+        });
+
+        // Function to handle modal image click
+        $('#modalImage').click(function() {
+            // Display variation options when the image is clicked
+            var variations = $('#variationSelect option');
+            var selectedIndex = $('#variationSelect').prop('selectedIndex');
+            if (selectedIndex === -1) selectedIndex = 0;
+            var nextIndex = (selectedIndex + 1) % variations.length;
+            $('#variationSelect').prop('selectedIndex', nextIndex).change();
+        });
+    });
+
+    </script>
+
+
 </body>
 </html>

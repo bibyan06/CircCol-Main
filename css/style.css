@@ -708,7 +708,7 @@ position: absolute;
 }
 .product_main {display:flex; flex-wrap: wrap; justify-content: center;}
 .project .project_box {
-text-align: left;
+text-align: center;
 max-width: 17.3%;
 margin: 0 15px 20px 15px;
 }
@@ -718,7 +718,7 @@ margin: 0 15px 20px 15px;
      height: 257px;
      display: flex;
      flex-wrap: wrap;
-     /*align-items: center;*/
+     align-items: center;
      justify-content: center;
 }
 
@@ -727,7 +727,7 @@ margin: 0 15px 20px 15px;
      font-size: 15px;
      line-height: 20px;
      padding: 22px 0px 0px 0px;
-     text-align: left;
+     text-align: center;
 }
 
 .project .read_more {
