@@ -1,30 +1,34 @@
 <!doctype html>
-                        <html>
-                            <head>
-                                <meta charset='utf-8'>
-                                <meta name='viewport' content='width=device-width, initial-scale=1'>
-                                <title>Snippet - BBBootstrap</title>
-                                <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
-                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
-                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-                                <style>::-webkit-scrollbar {
-                                  width: 8px;
-                                }
-                                /* Track */
-                                ::-webkit-scrollbar-track {
-                                  background: #f1f1f1; 
-                                }
+<html>
+<head>
+<meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Snippet - BBBootstrap</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+<style>
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+}
                                  
-                                /* Handle */
-                                ::-webkit-scrollbar-thumb {
-                                  background: #888; 
-                                }
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
                                 
-                                /* Handle on hover */
-                                ::-webkit-scrollbar-thumb:hover {
-                                  background: #555; 
-                                } body{
-    background: #ddd;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+} 
+body{
+    background: #ffffff;
     min-height: 100vh;
     vertical-align: middle;
     display: flex;
@@ -170,30 +174,32 @@ a:hover{
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: center;
-}</style>
-                                </head>
-                                <body className='snippet-body'>
-                                <div class="card">
-            <div class="row">
-                <div class="col-md-8 cart">
-                    <div class="title">
-                        <div class="row">
-                            <div class="col"><h4><b>Shopping Cart</b></h4></div>
-                            <div class="col align-self-center text-right text-muted">3 items</div>
+}
+</style>
+</head>
+
+<body className='snippet-body'>
+   <div class="card">
+     <div class="row">
+         <div class="col-md-8 cart">
+            <div class="title">
+                <div class="row">
+                    <div class="col"><h4><b>Shopping Cart</b></h4></div>
+                        <div class="col align-self-center text-right text-muted">3 items</div>
+                    </div>
+            </div>    
+                <div class="row border-top border-bottom">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg"></div>
+                        <div class="col">
+                            <div class="row text-muted">Shirt</div>
+                            <div class="row">Cotton T-shirt</div>
                         </div>
-                    </div>    
-                    <div class="row border-top border-bottom">
-                        <div class="row main align-items-center">
-                            <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg"></div>
-                            <div class="col">
-                                <div class="row text-muted">Shirt</div>
-                                <div class="row">Cotton T-shirt</div>
-                            </div>
                             <div class="col">
                                 <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a>
                             </div>
-                            <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
-                        </div>
+                         <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                 </div>
                     </div>
                     <div class="row">
                         <div class="row main align-items-center">
@@ -231,8 +237,8 @@ a:hover{
                         <div class="col text-right">&euro; 132.00</div>
                     </div>
                     <form>
-                        <p>SHIPPING</p>
-                        <select><option class="text-muted">Standard-Delivery- &euro;5.00</option></select>
+                        <p>PICK-UP DATE</p>
+                        <select><option class="text-muted">March, 2024 - 8:00 AM - 5:00 PM</option></select>
                         <p>GIVE CODE</p>
                         <input id="code" placeholder="Enter your code">
                     </form>
@@ -240,20 +246,49 @@ a:hover{
                         <div class="col">TOTAL PRICE</div>
                         <div class="col text-right">&euro; 137.00</div>
                     </div>
-                    <button class="btn">CHECKOUT</button>
+                    <button class="btn" onclick="window.location.href = 'order_details.php';">CHECKOUT</button>
                 </div>
             </div>
             
         </div>
-                                <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-                                <script type='text/javascript' src='#'></script>
-                                <script type='text/javascript' src='#'></script>
-                                <script type='text/javascript' src='#'></script>
-                                <script type='text/javascript'>#</script>
-                                <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
-                                myLink.addEventListener('click', function(e) {
-                                  e.preventDefault();
-                                });</script>
-                            
-                                </body>
-                            </html>
+        </div>
+            <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+            <script type='text/javascript' src='#'></script>
+            <script type='text/javascript' src='#'></script>
+            <script type='text/javascript' src='#'></script>
+            <script type='text/javascript'>#</script>
+
+    <?php
+        //require 'vendor/autoload.php'; // Include the autoload file if you're using Composer
+
+        //use PhpOffice\PhpSpreadsheet\IOFactory;
+        //use PhpOffice\PhpSpreadsheet\Spreadsheet;
+
+        //function generateReceipt() {
+            // Load the Excel template
+           // $templatePath = 'receipt_temp.xlsx';
+           // $reader = IOFactory::createReaderForFile($templatePath);
+           // $spreadsheet = $reader->load($templatePath);
+           // $sheet = $spreadsheet->getActiveSheet();
+
+            // Replace placeholders with actual data from the cart and summary
+          //  $sheet->setCellValue('A1', 'Item Name');
+           // $sheet->setCellValue('B1', 'Quantity');
+            // Replace more placeholders as needed...
+
+            // Save the modified Excel file
+           // $outputPath = 'generated_receipt.pdf';
+           // $writer = IOFactory::createWriter($spreadsheet, 'pdf');
+          //  $writer->save($outputPath);
+
+            // Redirect to the generated receipt file
+           // header('Location: ' . $outputPath);
+          //  exit;
+        //}
+
+        // if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['checkout'])) {
+           // generateReceipt();
+       // }
+    ?>
+</body>
+</html>

@@ -25,8 +25,7 @@
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
   
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -34,7 +33,7 @@
     <![endif]-->
 </head>
 <!-- body -->
-<body class="main-layout">
+<body class="main-layout footer_to90 project_page">
     <!-- loader 
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -52,14 +51,18 @@
                                 <li><a href="#"><img src="images/call.png" alt="#"/>Call us: 0126 - 922 - 0162</a> </li>
                             </ul>
                         </div>
-                        <div class="col-md-4">
-                            <ul class="social_icon">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
+                    <div class="col-md-4">
+                        <ul class="social_icon">
+                           <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                              </a>
+                           </li>
+                           <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                           <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
                         <div class="col-md-4">
                             <div class="se_fonr1">
                                 <form action="#">
@@ -90,6 +93,7 @@
                         <div style="margin-left: 27em;" class="col-md-4">
                             <ul class="right_icon d_none1">
                                 <li><a href="cart.php"><img src="images/shopping.png" alt="#"/></a></li>
+                                <li><a href="message.php"><img src="images/messsaging.png" alt="#"/></a></li>
                             </ul>
                         </div>
                     </div>
@@ -153,95 +157,77 @@
             <div class="row">
             <div class="product_main">
                 <div class="project_box">
-                <div class="dark_white_bg" ><img  src="images/shoes2.png" alt="#"/></div>
-                <h3 >Short Openwork Cardigan</h3>
-                <h4>Php 320.00</h4>
-                <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>      
-            </div>
-                  <div class="project_box" id="featured">
-                     <div class="dark_white_bg" ><img  src="images/shoes2.png" alt="#"/></div>
-                     <h3 >Short Openwork Cardigan</h3>
-                     <h4>Php 320.00</h4>
-                     <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <a href="#"><i class="fas fa-cart-plus cart"></i></a>
-                    </div>
-                   
-                  </div>
+                <div class="dark_white_bg" ><img src="images/info_tech_black.png" alt="#"/></div>
+                <h3 data-product-name="Info Tech Black">Info Tech Black</h3>
+                <h4 data-product-price="Php 250.00">Php 250.00</h4>
+                <button class="variation_btn" data-toggle="modal" data-target="#variationModal">Add to Cart</button>          
+                </div>
+                <div class="project_box">
+                     <div class="dark_white_bg" ><img  src="images/info_tech_white.png" alt="#"/></div>
+                     <h3 data-product-name="Info Tech White">Info Tech White</h3>
+                     <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                     <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                </div>
                   
                   <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/shoes3.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
+                     <div class="dark_white_bg" ><img  src="images/circuits_limited_edition.png" alt="#"/></div>
+                     <h3 data-product-name="CircUITS Limited Edition">CircUITS Limited Edition</h3>
+                     <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                     <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   </div>
               
                   <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/shoes4.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
+                     <div class="dark_white_bg" ><img  src="images/keystrap.png" alt="#"/></div>
+                     <h3 data-product-name="Key Strap">Key strap</h3>
+                     <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                     <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   </div>
               
                   <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/shoes5.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
+                     <div class="dark_white_bg" ><img  src="images/lanyard.png" alt="#"/></div>
+                     <h3 data-product-name="Lanyard BLB">Lanyard BLB</h3>
+                     <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                     <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   </div>
               
             
                   <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="images/tisat1.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
+                     <div class="dark_white_bg" ><img  src="images/lanyard01.png" alt="#"/></div>
+                     <h3 data-product-name="Lanyard B&B">Lanyard B&B</h3>
+                     <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                     <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   </div>
               
                   <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="images/tisat2.png" alt="#"/></div>
-                     <h3 >Short Openwork Cardigan $120.00</h3>
+                     <div class="dark_white_bg" ><img  src="images/lanyard02.png" alt="#"/></div>
+                     <h3 data-product-name="Lanyard B&V">Lanyard B&V </h3>
+                     <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                     <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   </div>
                
                   <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/tisat3.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
+                     <div class="dark_white_bg" ><img  src="images/lanyard03.png" alt="#"/></div>
+                     <h3 data-product-name="Lanyard GWB">Lanyard GWB</h3>
+                     <h4 data-product-price="Php 160.00">Php 160.00</h4>
+                     <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   </div>
                
                   <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/tisat4.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
+                     <div class="dark_white_bg" ><img  src="images/button_pin.png" alt="#"/></div>
+                     <h3 data-product-name="Button pin">Button pin</h3>
+                     <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                     <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   </div>
                
                   <div class="project_box">
                      <div class="dark_white_bg" ><img  src="images/tisat5.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
+                     <h3 data-product-name="Short Openwork Cardigan">Short Openwork Cardigan</h3>
+                     <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                     <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   </div>
-               
-            
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="images/mix1.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="images/mix2.png" alt="#"/></div>
-                     <h3 >Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/mix3.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-              
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/mix4.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/mix5.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-              
+        
                <div class="col-md-12">
-                  <a class="read_more" href="#">See More</a>
+                  <a class="read_more" href="products.html">See More</a>
                </div>
             </div>
             </div>
@@ -249,33 +235,41 @@
       </div>
       <!-- end project section -->
 
-       <!-- Variation Modal -->
+    <!-- Variation Modal -->
         <div class="modal fade" id="variationModal" tabindex="-1" role="dialog" aria-labelledby="variationModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="variationModalLabel">Choose Variation</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Variation options and add to cart button -->
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="variationModalLabel">Add to Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <!-- Variation options and add to cart button -->
+                <div class="product-info">
+                    <div class="product-img">
                         <img id="modalImage" src="" alt="Chosen Photo">
-                        <select id="variationSelect">
-                            <!-- Variation options will be dynamically added here -->
-                        </select>
-                        <h4 id="modalPrice"></h4> <!-- Adjusted to display price -->
+                    </div>
+                    <div class="quantity-section">
+                        <span class="quantity-label">Quantity:</span>
+                        <div class="quantity-input">
                         <input type="number" id="quantityInput" value="1" min="1">
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" id="addToCartBtn">Add to Cart</button>
                     </div>
+                </div>
+                <div class="product-details">
+                        <h4 id="modalName"></h4> <!-- Display product name -->
+                        <h4 id="modalPrice"></h4> <!-- Display product price -->
+                 </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="addToCartBtn"><a href="cart.php" style="color: white; text-decoration: none;">Add to Cart</a></button>
                 </div>
             </div>
         </div>
-
+    </div>
     <!-- footer -->
     <footer>
         <div class="footer">
@@ -317,35 +311,29 @@
                 $('#modalImage').attr('src', imgSrc);
 
                 // Fetch and display the price of the chosen product
-
-                
                 var selectedPrice = variations[selectedVariation - 1].price;
                 $('#modalPrice').text('Price: ' + selectedPrice);
+
+                // Fetch and display the name of the chosen product
+                var selectedName = variations[selectedVariation - 1].name;
+                $('#modalName').text('Product: ' + selectedName);
             });
         }
 
-        // Mock variations data (replace with your actual data)
-        var variationsData = [
-            { id: 1, name: 'Black', imageSrc: 'images/black_shoes.png', price: 'Php 320.00' },
-            { id: 2, name: 'Blue', imageSrc: 'images/blue_shoes.png', price: 'Php 350.00' },
-            { id: 3, name: 'White', imageSrc: 'images/white_shoes.png', price: 'Php 300.00' }
-        ];
-
-        // Event listener for variation button click
+         // Event listener for variation button click
         $('.variation_btn').click(function() {
             populateVariations(variationsData);
             // Get the image source of the selected project box and display it in the modal
             var imgSrc = $(this).closest('.project_box').find('img').attr('src');
             $('#modalImage').attr('src', imgSrc);
-        });
 
-        // Event listener for add to cart button click
-        $('.variation_btn').click(function() {
-            var selectedVariation = $('#variationSelect').val();
-            // Fetch the price of the chosen variation
-            var selectedPrice = variationsData[selectedVariation - 1].price;
-            // Update the price in the corresponding product box
-            $(this).siblings('h4').text(selectedPrice);
+            // Retrieve product name and price from data attributes
+            var productName = $(this).siblings('h3').attr('data-product-name');
+            var productPrice = $(this).siblings('h4').attr('data-product-price');
+
+            // Update modal content with product name and price
+            $('#modalName').text('Product: ' + productName);
+            $('#modalPrice').text('Price: ' + productPrice);
         });
 
         // Function to handle modal image click
@@ -357,10 +345,14 @@
             var nextIndex = (selectedIndex + 1) % variations.length;
             $('#variationSelect').prop('selectedIndex', nextIndex).change();
         });
+
+        // Mock variations data (replace with your actual data)
+        var variationsData = [
+          { id: 1, name: 'Black', imageSrc: 'images/black_shoes.png', price: 'Php 320.00' },
+          { id: 2, name: 'Blue', imageSrc: 'images/blue_shoes.png', price: 'Php 350.00' },
+          { id: 3, name: 'White', imageSrc: 'images/white_shoes.png', price: 'Php 300.00' }
+        ];
     });
-
     </script>
-
-
 </body>
 </html>

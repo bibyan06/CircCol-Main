@@ -708,9 +708,9 @@ position: absolute;
 }
 .product_main {display:flex; flex-wrap: wrap; justify-content: center;}
 .project .project_box {
-text-align: center;
-max-width: 17.3%;
-margin: 0 15px 20px 15px;
+     text-align: center;
+     max-width: 17.3%;
+     margin: 0 15px 20px 15px;
 }
 
 .dark_white_bg {
@@ -720,6 +720,7 @@ margin: 0 15px 20px 15px;
      flex-wrap: wrap;
      align-items: center;
      justify-content: center;
+     width: 200px;
 }
 
 .project .project_box h3 {
@@ -747,7 +748,56 @@ margin: 0 15px 20px 15px;
 
 /** end project section **/
 
-
+/*cart*/
+.quantity-input {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .quantity-label {
+     margin-right: 10px;
+ }
+ 
+ /*.quantity-btn {
+     width: 30px;
+     height: 30px;
+     background-color: #ccc;
+     border: none;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }*/
+ 
+ .quantity-input input {
+     width: 60px;
+     padding: 5px;
+     text-align: center;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     margin: 0 5px;
+ }
+ 
+ .product-info {
+     display: flex;
+     align-items: center;
+ }
+ 
+ .quantity-section {
+     margin-left: 50px;
+ }
+ 
+ .quantity-label {
+     margin-right: 10px; /* Adjust margin as needed */
+ }
+ 
+ .modal-body {
+     position: relative;
+     -ms-flex: 1 1 auto;
+     flex: 1 1 auto;
+     padding: 1rem;
+     margin-left: 50px;
+ }
 /** fashion section **/
 
 .fashion img {

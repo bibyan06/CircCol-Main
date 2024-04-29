@@ -16,7 +16,7 @@
             <div class="col-xl-10 col-lg-11 login-container">
                 <div class="row">
                     <div class="col-lg-7 img-box">
-                        <img src="assets/images/login-banner.png" alt="">
+                        <img src="images/login-banner.png" alt="">
                     </div>
                     <div class="col-lg-5 no-padding">
                         <div class="login-box">
