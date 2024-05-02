@@ -47,6 +47,13 @@ body{
         width: 90%;
     }
 }
+.name{
+    color: rgb(35,25,85);
+    font-weight: 790;
+    margin-bottom: 2vh;
+    padding: 0 8%;
+    font-size: 20px;
+}
 .title{
     color: rgb(35,25,85);
     font-weight: 600;
@@ -216,6 +223,7 @@ body{
 </head>
 <body className='snippet-body'>
 <div class="card">
+<div class="name">Thank you for your order, Name!</div>
     <div class="title">Purchase Reciept</div>
         <div class="info">
                 <div class="row">
