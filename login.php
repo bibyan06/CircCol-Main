@@ -61,7 +61,7 @@ $password = "password"; // Replace with your MySQL password
 $dbname = "CirCol";
 
 // Create connection
-$connection = new mysqli($servername, $username, $password, $dbname);
+$connection = new mysqli($servername, $email, $password, $dbname);
 
 // Check connection
 if ($connection->connect_error) {
