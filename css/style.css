@@ -197,8 +197,9 @@ blockquote {
 button {
      border: 0;
      margin: 0;
-     padding: 0;
+     padding: 5px;
      cursor: pointer;
+     background:gainsboro;
 }
 
 .full {
@@ -469,6 +470,21 @@ ul.right_icon li img {
      color: #b7b7b7;
 }
 
+.project_box {
+     margin-bottom: 60px; /* Add some space between product boxes */
+ }
+ 
+ @media (max-width: 767px) {
+.project_box {
+         margin-bottom: 30px; /* Adjust margin for smaller screens */
+     }
+ }
+ 
+ @media (max-width: 576px) {
+     .project_box {
+         margin-bottom: 25px; /* Further adjust margin for extra small screens */
+     }
+ }
 
 /*-- marker-end sidebar  navigation--*/
 
@@ -683,7 +699,7 @@ position: absolute;
  /* end of kent */
  
 .project {
-     background: url(../images/product_bg.jpg);
+     background: #f1f1f1;
      background-size: 100% 100%;
      background-repeat: no-repeat;
      padding: 90px 0 90px 0;
@@ -707,6 +723,7 @@ position: absolute;
      color: #fff;
 }
 .product_main {display:flex; flex-wrap: wrap; justify-content: center;}
+
 .project .project_box {
      text-align: center;
      max-width: 17.3%;
@@ -714,7 +731,7 @@ position: absolute;
 }
 
 .dark_white_bg {
-     background: #f2f2f2;
+     background:gainsboro;
      height: 257px;
      display: flex;
      flex-wrap: wrap;
@@ -790,6 +807,8 @@ position: absolute;
  .quantity-label {
      margin-right: 10px; /* Adjust margin as needed */
  }
+
+ 
  
  .modal-body {
      position: relative;

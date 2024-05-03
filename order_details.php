@@ -95,7 +95,7 @@ body{
     padding: 0 8%;
     font-size: x-small;
     color: black;
-    justify-content: flex-end; 
+    justify-content: right; 
 }
 .footer img{
     height: 5vh;
@@ -111,6 +111,7 @@ body{
 }
 .footer .row{
     margin: 0;
+    align-items: right;
 }
 
 .back-to-shop{
@@ -273,12 +274,13 @@ body{
                 </ul>
             </div>
             <div class="footer">
-                <div class="row justify-content-end"> <!-- Align items to the right -->
-                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/YBWc55P.png"></div>
-                    <div class="col-10">Want any help? Please &nbsp;<a> contact us</a></div>
-                </div>
-                <div class="back-to-shop"><a href="dashboard.php">&leftarrow;</a><span class="text-muted">Back to shop</span></div> 
+            <div class="row justify-content-between"> <!-- Align items with space between -->
+                    <div class="col"><img class="img-fluid" src="https://i.imgur.com/YBWc55P.png"></div>
+                    <div class="col-10 text-right">Want any help? Please &nbsp;<a> contact us</a></div>
+                    <div class="back-to-shop"><a href="dashboard.php">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
+                    <div class=""></div> 
             </div>
+                </div>               
         </div>
 
 <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>

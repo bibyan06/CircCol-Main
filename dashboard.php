@@ -29,7 +29,7 @@
   
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>s
     <![endif]-->
 </head>
 <!-- body -->
@@ -92,8 +92,9 @@
                         </div>
                         <div style="margin-left: 27em;" class="col-md-4">
                             <ul class="right_icon d_none1">
-                                <li><a href="cart.php"><img src="images/shopping.png" alt="#"/></a></li>
-                                <li><a href="message.php"><img src="images/messsaging.png" alt="#"/></a></li>
+                                <li><a href="cart.php"><img src="images/shopping.png" alt="#" style="width: 20px; height:20px auto;"/><span id="cartItemCount" class="badge badge-danger"></span></a></li>
+                                <li><a href="message.php"><img src="images/messaging.png" alt="#" style="width: 20px; height:20px auto;" /></a></li>
+                                <li><a href="user_profile.php"><img src="images/user_profile.png" alt="#" style="width: 20px; height:20px auto;" /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -116,7 +117,7 @@
                                             <a class="nav-link" href="about.html">About</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="products.html">Products</a>
+                                            <a class="nav-link" href="products.php">Products</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="fashion.html">Fashion</a>
@@ -132,102 +133,164 @@
                             </nav>
                         </div>
                         <div class="col-md-4">
-                            <div class="search">
-                                <form action="/action_page.php">
-                                    <input class="form_sea" type="text" placeholder="Search...">
-                                </form>
-                            </div>
+                        <div class="search">
+                           <input id="searchProduct" class="form_sea" type="text" placeholder="Search" name="search">
+                              <button type="submit" class="seach_icon"><i class="fa fa-search"></i></button>
                         </div>
+                     </div>
                     </div>
                 </div>
             </div>
         </div>
+    <style>
+   .modal {
+    text-align: center;
+    }
+
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    @media (min-width: 768px) {
+        .modal-dialog {
+            max-width: none;
+            width: 500px;
+            margin: 10% auto;
+        }
+    }
+
+    .heart-btn {
+        color: grey; /* Set the initial color to white */
+        border: 1px solid grey; /* Add border */
+        width: 40px; /* Set fixed width */
+        height: 40px; /* Set fixed height */
+        padding: 5px; /* Adjust padding as needed */
+        margin-left: 45px;
+        text-align: center; /* Center the icon */
+        line-height: 1;
+        background: none;
+    }
+
+    .heart-btn.heart-active {
+        color: red; /* Set the color to red when active */
+        border: none; /* Remove border when active */
+    }
+    .variation_btn {
+        margin-left: 10px; /* Add space to the left */
+    }
+    </style>
     </header>
     <!-- end header -->
      <!-- project section -->
      <div id="project" class="project">
          <div class="container">
             <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Featured Merchandise</h2>
-                  </div>
-               </div>
+            <div class="col-md-9">
+                <div class="titlepage">
+                    <h2>Featured Merchandise</h2>
+                </div>
+            </div>
+                <div class="col-md-3">
+                    <!-- Filter drop-down -->
+                    <div class="form-group">
+                        <label for="filterDropdown">Filter:</label>
+                        <select class="form-control" id="filterDropdown">
+                            <option value="all">All</option>
+                            <option value="Shirt">Shirt</option>
+                            <option value="Lanyard">Lanyard</option>
+                            <option value="Others">Others</option>
+                            <!-- Add more options for other merchandise categories -->
+                        </select>
+                    </div>
+                 </div>
             </div>
             <div class="row">
             <div class="product_main">
-                <div class="project_box">
+                <div class="project_box" data-product-name="Shirt">
                 <div class="dark_white_bg" ><img src="images/info_tech_black.png" alt="#"/></div>
                 <h3 data-product-name="Info Tech Black">Info Tech Black</h3>
                 <h4 data-product-price="Php 250.00">Php 250.00</h4>
-                <button class="variation_btn" data-toggle="modal" data-target="#variationModal">Add to Cart</button>          
+                <button class="variation_btn" data-toggle="modal" data-target="#variationModal">Add to Cart</button>         
+                <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                 </div>
-                <div class="project_box">
+
+                <div class="project_box" data-product-name="Shirt">
                      <div class="dark_white_bg" ><img  src="images/info_tech_white.png" alt="#"/></div>
                      <h3 data-product-name="Info Tech White">Info Tech White</h3>
                      <h4 data-product-price="Php 320.00">Php 320.00</h4>
                      <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                     <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                 </div>
                   
-                  <div class="project_box">
+                  <div class="project_box" data-product-name="Shirt">
                      <div class="dark_white_bg" ><img  src="images/circuits_limited_edition.png" alt="#"/></div>
                      <h3 data-product-name="CircUITS Limited Edition">CircUITS Limited Edition</h3>
                      <h4 data-product-price="Php 320.00">Php 320.00</h4>
                      <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                     <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                   </div>
               
-                  <div class="project_box">
+                  <div class="project_box" data-product-name="Others">
                      <div class="dark_white_bg" ><img  src="images/keystrap.png" alt="#"/></div>
                      <h3 data-product-name="Key Strap">Key strap</h3>
                      <h4 data-product-price="Php 320.00">Php 320.00</h4>
                      <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                     <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                   </div>
               
-                  <div class="project_box">
+                  <div class="project_box" data-product-name="Lanyard">
                      <div class="dark_white_bg" ><img  src="images/lanyard.png" alt="#"/></div>
                      <h3 data-product-name="Lanyard BLB">Lanyard BLB</h3>
                      <h4 data-product-price="Php 320.00">Php 320.00</h4>
                      <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                     <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                   </div>
               
             
-                  <div class="project_box ">
+                  <div class="project_box " data-product-name="Lanyard">
                      <div class="dark_white_bg" ><img  src="images/lanyard01.png" alt="#"/></div>
                      <h3 data-product-name="Lanyard B&B">Lanyard B&B</h3>
                      <h4 data-product-price="Php 320.00">Php 320.00</h4>
                      <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                     <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                   </div>
               
-                  <div class="project_box ">
+                  <div class="project_box" data-product-name="Lanyard">
                      <div class="dark_white_bg" ><img  src="images/lanyard02.png" alt="#"/></div>
                      <h3 data-product-name="Lanyard B&V">Lanyard B&V </h3>
                      <h4 data-product-price="Php 320.00">Php 320.00</h4>
                      <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                     <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                   </div>
                
-                  <div class="project_box">
+                  <div class="project_box" data-product-name="Lanyard">
                      <div class="dark_white_bg" ><img  src="images/lanyard03.png" alt="#"/></div>
                      <h3 data-product-name="Lanyard GWB">Lanyard GWB</h3>
                      <h4 data-product-price="Php 160.00">Php 160.00</h4>
                      <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                     <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                   </div>
                
-                  <div class="project_box">
+                  <div class="project_box" data-product-name="Others">
                      <div class="dark_white_bg" ><img  src="images/button_pin.png" alt="#"/></div>
                      <h3 data-product-name="Button pin">Button pin</h3>
                      <h4 data-product-price="Php 320.00">Php 320.00</h4>
                      <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                     <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                   </div>
                
-                  <div class="project_box">
+                  <div class="project_box" data-product-name="Shirt">
                      <div class="dark_white_bg" ><img  src="images/tisat5.png" alt="#"/></div>
-                     <h3 data-product-name="Short Openwork Cardigan">Short Openwork Cardigan</h3>
-                     <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                     <h3 data-product-name="Sir Kit's Plain Tee">Sir Kit's Plain Tee</h3>
+                     <h4 data-product-price="Php 200.00">Php 200.00</h4>
                      <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+                     <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                   </div>
         
                <div class="col-md-12">
-                  <a class="read_more" href="products.html">See More</a>
+                  <a class="read_more" href="products.php">See More</a>
                </div>
             </div>
             </div>
@@ -255,7 +318,8 @@
                         <span class="quantity-label">Quantity:</span>
                         <div class="quantity-input">
                         <input type="number" id="quantityInput" value="1" min="1">
-                    </div>
+                        </div>
+                        <div id="availableStocks">available</div>
                     </div>
                 </div>
                 <div class="product-details">
@@ -290,6 +354,25 @@
 
     <script>
         $(document).ready(function() {
+         // Function to handle search functionality
+            $('#searchProduct').on('input', function() {
+               var searchText = $(this).val().toLowerCase(); // Get the search text and convert it to lowercase for case-insensitive search
+                     
+               // Iterate through each product box
+               $('.project_box').each(function() {
+                  var productName = $(this).find('h3').data('product-name').toLowerCase(); // Get the product name and convert it to lowercase
+                        
+                  // Check if the product name contains the search text
+                  if (productName.includes(searchText)) {
+                        $(this).show(); // Show the product box if it matches the search criteria
+                  } else {
+                     $(this).hide(); // Hide the product box if it doesn't match the search criteria
+                  }
+               });
+            });
+        });
+
+        $(document).ready(function() {
         // Function to populate variation options in the modal and update image
         function populateVariations(variations) {
             var select = $('#variationSelect');
@@ -300,6 +383,46 @@
                     text: variation.name
                 }));
             });
+
+            $(document).ready(function() {
+            // Function to handle click on heart button
+            $('.heart-btn').click(function() {
+                // Toggle the 'heart-active' class when heart button is clicked
+                $(this).toggleClass('heart-active');
+
+                // Add or remove product from wishlist based on the heart button state
+                if ($(this).hasClass('heart-active')) {
+                    // Add product to wishlist
+                    addToWishlist($(this).siblings('h3').text());
+                } else {
+                    // Remove product from wishlist
+                    removeFromWishlist($(this).siblings('h3').text());
+                }
+            });
+
+            // Function to add product to wishlist
+            function addToWishlist(productName) {
+                // Here you can implement the logic to add the product to the wishlist
+                // For demonstration, let's just log a message
+                console.log(productName + ' added to wishlist');
+            }
+
+            // Function to remove product from wishlist
+            function removeFromWishlist(productName) {
+                // Here you can implement the logic to remove the product from the wishlist
+                // For demonstration, let's just log a message
+                console.log(productName + ' removed from wishlist');
+            }
+        });
+
+        function updateCartBadge() {
+            // Fetch the current number of items in the cart (you need to implement this logic)
+            var cartItemCount = getCartItemCount(); // You need to implement this function
+
+            // Update the badge count
+            $('#cartItemCount').text(cartItemCount);
+        }
+
 
             // Event listener for variation select change
             select.change(function() {
@@ -317,6 +440,10 @@
                 // Fetch and display the name of the chosen product
                 var selectedName = variations[selectedVariation - 1].name;
                 $('#modalName').text('Product: ' + selectedName);
+
+                // Fetch and display the available stocks for the chosen product
+                var availableStocks = variations[selectedVariation - 1].stocks;
+                 $('#availableStocks').text('Available Stocks: ' + availableStocks);
             });
         }
 
@@ -336,6 +463,9 @@
             $('#modalPrice').text('Price: ' + productPrice);
         });
 
+        //Add the following line to update the cart badge
+        updateCartBadge();
+
         // Function to handle modal image click
         $('#modalImage').click(function() {
             // Display variation options when the image is clicked
@@ -353,6 +483,32 @@
           { id: 3, name: 'White', imageSrc: 'images/white_shoes.png', price: 'Php 300.00' }
         ];
     });
+
+    $(document).ready(function() {
+            // Function to handle filtering
+            $('#filterDropdown').change(function() {
+               var selectedCategory = $(this).val();
+               filterProducts(selectedCategory);
+            });
+
+            function filterProducts(category) {
+               // Show all products initially
+               $('.project_box').show();
+               
+               // If 'All' is selected, show all products
+               if (category === 'all') {
+                     return;
+               }
+               
+               // Hide products not belonging to the selected category
+               $('.project_box').each(function() {
+                     var productName = $(this).data('product-name').toLowerCase();
+                     if (productName !== category.toLowerCase()) {
+                        $(this).hide();
+                     }
+               });
+            }
+         });
     </script>
 </body>
 </html>

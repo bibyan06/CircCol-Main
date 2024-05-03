@@ -287,12 +287,19 @@ body {
     font-size: .9rem; }
 
   .login-box .donroo a {
-    ont-size: .9rem;
+    font-size: .9rem;
     color: #5288f4;
     padding-left: 3px;
     text-decoration: underline; }
 
   .login-box .btnroo .btn {
+    margin-right: 15px;
+    border-radius: 50px;
+    width: 120px; 
+    background: #183661;
+  }
+
+  .login-box .btnroo .create {
     margin-right: 15px;
     border-radius: 50px;
     width: 120px; }

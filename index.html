@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>circol</title>
+      <title>CirCol</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -87,7 +87,7 @@
                   <div class="row d_flex">
                      <div class="col-md-4">
                         <ul class="conta_icon d_none1">
-                            <li><a href="#"><img src="images/circol logo.png" alt="#" style="width: 700px; height:60px auto;"/></a></li>
+                            <li><a href="#"><img src="images/circol logo.png" alt="#" style="width: 200px; height:60px auto;"/></a></li>
                         </ul>
                     </div>
                      <!--<div class="col-md-4">
@@ -95,7 +95,7 @@
                      </div> -->
                      <div style=" margin-left:27em;" class="col-md-4">
                         <ul class="right_icon d_none1">
-                           <li><a href="#"><img src="images/shopping.png" alt="#"/></a> 
+                           <li><a href="#"><img src="images/shopping.png" alt="#" style="width: 25px; height:25px auto;"/></a> 
                            </li><a href="login.php" class="order">Order Now</a> 
                         </ul>
                      </div>
@@ -113,22 +113,22 @@
                            <div class="collapse navbar-collapse" id="navbarsExample04">
                               <ul class="navbar-nav mr-auto">
                                  <li class="nav-item active">
-                                    <a class="nav-link" href="dashboard.php">Home</a>
+                                    <a class="nav-link" href="#">Home</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
+                                    <a class="nav-link" href="#">About</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="products.html">Products</a>
+                                    <a class="nav-link" href="#">Products</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="fashion.html">Fashion</a>
+                                    <a class="nav-link" href="#">Fashion</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="news.html">News</a>
+                                    <a class="nav-link" href="#">News</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                    <a class="nav-link" href="#">Contact Us</a>
                                  </li>
                               </ul>
                            </div>
@@ -225,92 +225,76 @@
             </div>
             <div class="row">
             <div class="product_main">
-                 <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="images/shoes1.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-                  
-                  <div class="project_box" id="featured">
-                     <div class="dark_white_bg" ><img  src="images/shoes2.png" alt="#"/></div>
-                     <h3 >Short Openwork Cardigan</h3>
-                     <h4>Php 320.00</h4>
-                     <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <a href="#"><i class="fas fa-cart-plus cart"></i></a>
-                    </div>
-                   
-                  </div>
-                  
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/shoes3.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
+               <div class="project_box">
+                  <div class="dark_white_bg" ><img src="images/info_tech_black.png" alt="#"/></div>
+                  <h3 data-product-name="Info Tech Black">Info Tech Black</h3>
+                  <h4 data-product-price="Php 250.00">Php 250.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal">Add to Cart</button>         
+                  <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg" ><img  src="images/circuits_limited_edition.png" alt="#"/></div>
+                  <h3 data-product-name="CircUITS Limited Edition">CircUITS Limited Edition</h3>
+                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+               </div>
+               
+               <div class="project_box">
+                  <div class="dark_white_bg" ><img  src="images/lanyard.png" alt="#"/></div>
+                  <h3 data-product-name="Lanyard BLB">Lanyard BLB</h3>
+                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+               </div>
+           
+               <div class="project_box">
+                  <div class="dark_white_bg" ><img  src="images/keystrap.png" alt="#"/></div>
+                  <h3 data-product-name="Key Strap">Key strap</h3>
+                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+               </div>
               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/shoes4.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
+               <div class="project_box">
+                  <div class="dark_white_bg" ><img  src="images/button_pin.png" alt="#"/></div>
+                  <h3 data-product-name="Button pin">Button pin</h3>
+                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+               </div>
               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/shoes5.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
+               <div class="project_box ">
+                  <div class="dark_white_bg" ><img  src="images/sirkits_hoodie.png" alt="#"/></div>
+                  <h3 data-product-name="Sir Kit's Hoodie">Sir Kit's Hoodie</h3>
+                  <h4 data-product-price="Php 500.00">Php 500.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+               </div>
               
-            
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="images/tisat1.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
+               <div class="project_box">
+                  <div class="dark_white_bg" ><img  src="images/tumbler.png" alt="#"/></div>
+                  <h3 data-product-name="Sir Kit's Tumbler">Sir Kit's Tumbler</h3>
+                  <h4 data-product-price="Php 250.00">Php 250.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+               </div>
               
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="images/tisat2.png" alt="#"/></div>
-                     <h3 >Short Openwork Cardigan $120.00</h3>
-                  </div>
+               <div class="project_box">
+                  <div class="dark_white_bg" ><img  src="images/mousepad.png" alt="#"/></div>
+                  <h3 data-product-name="Sir Kit's Mousepad">Sir Kit's Mousepad</h3>
+                  <h4 data-product-price="Php 150.00">Php 150.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+               </div>
                
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/tisat3.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
+               <div class="project_box">
+                  <div class="dark_white_bg" ><img  src="images/keyboard.png" alt="#"/></div>
+                  <h3 data-product-name="Sir Kit's Keyboard">Sir Kit's Keyboard</h3>
+                  <h4 data-product-price="Php 2000.00">Php 2000.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+               </div>
                
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/tisat4.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/tisat5.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-            
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="images/mix1.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box ">
-                     <div class="dark_white_bg" ><img  src="images/mix2.png" alt="#"/></div>
-                     <h3 >Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/mix3.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-              
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/mix4.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
-               
-                  <div class="project_box">
-                     <div class="dark_white_bg" ><img  src="images/mix5.png" alt="#"/></div>
-                     <h3>Short Openwork Cardigan $120.00</h3>
-                  </div>
+               <div class="project_box">
+                  <div class="dark_white_bg" ><img  src="images/sticker_set.png" alt="#"/></div>
+                  <h3 data-product-name="Sir Kit's Sticker Set">Sir Kit's Sticker Set</h3>
+                  <h4 data-product-price="Php 50.00">Php 50.00</h4>
+                  <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
+               </div>
               
                <div class="col-md-12">
                   <a class="read_more" href="#">See More</a>
