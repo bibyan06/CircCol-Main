@@ -243,7 +243,7 @@ body {
   transition: 0.3s;
   background-color: rgba(255, 255, 255, 0.72);
   margin: auto;
-  margin-top: 7%; }
+  margin-top: 5%; }
   @media screen and (max-width: 991px) {
     .login-container {
       margin-bottom: 5%; } }
@@ -298,11 +298,16 @@ body {
     width: 120px; 
     background: #183661;
   }
-
   .login-box .btnroo .create {
     margin-right: 15px;
     border-radius: 50px;
-    width: 120px; }
+    width: 120px; 
+  }
+  .login-box .btnroo .login {
+    margin-right: 15px;
+    border-radius: 50px;
+    width: 120px; 
+  }
 
   .login-box label {
     font-size: .93rem;

@@ -19,56 +19,56 @@
                         <img src="images/login-banner.png" alt="">
                     </div>
                     <div class="col-lg-5 no-padding">
-                        <div class="login-box">
+                        <div class="signup login-box">
                             <h5>Welcome Back!</h5>
 
                             
-                            <div class="login-row row no-margin">
+                            <div class="login-row row no-margin signup">
                                 <label for=""><i class="fas fa-envelope"></i> First Name</label>
                                 <input type="text" class="form-control form-control-sm">
                             </div>
 
-                            <div class="login-row row no-margin">
+                            <div class="login-row row no-margin signup">
                                 <label for=""><i class="fas fa-envelope"></i> Last Name</label>
                                 <input type="text" class="form-control form-control-sm">
                             </div>
 
-                            <div class="login-row row no-margin">
+                            <div class="login-row row no-margin signup>
                                 <label for=""><i class="fas fa-envelope"></i> Age</label>
                                 <input type="text" class="form-control form-control-sm">
                             </div>
 
-                            <div class="login-row row no-margin">
+                            <div class="login-row row no-margin signup">
                                 <label for=""><i class="fas fa-envelope"></i> Phone Number</label>
                                 <input type="text" class="form-control form-control-sm">
                             </div>
 
-                            <div class="login-row row no-margin">
+                            <div class="login-row row no-margin signup">
                                 <label for=""><i class="fas fa-envelope"></i> Address</label>
                                 <input type="text" class="form-control form-control-sm">
                             </div>
 
-                            <div class="login-row row no-margin">
+                            <div class="login-row row no-margin signup">
                                 <label for=""><i class="fas fa-envelope"></i> Email</label>
                                 <input type="text" class="form-control form-control-sm">
                             </div>
 
-                            <div class="login-row row no-margin">
+                            <div class="login-row row no-margin signup">
                                 <label for=""><i class="fas fa-envelope"></i> Username</label>
                                 <input type="text" class="form-control form-control-sm">
                             </div>
 
-                            <div class="login-row row no-margin">
+                            <div class="login-row row no-margin signup">
                                 <label for=""><i class="fas fa-unlock-alt"></i> Password</label>
                                 <input type="password" class="form-control form-control-sm">
                             </div>
 
 
-                            <div class="login-row btnroo row no-margin">
+                            <div class="login-row btnroo row no-margin signup">
                                 <button id="signin-btn" class="btn btn-primary btn-sm"> Sign Up</button>
-                                <button class="btn btn-light  btn-sm"> Login Account</button>
+                                <button class="login btn-light  btn-sm"> Login Account</button>
                             </div>
-                            <div class="login-row donroo row no-margin">
+                            <div class="login-row donroo row no-margin signup">
                                 <p>Do you have an Account? <a href="login.php">Log in</a></p>
                             </div>
                         </div>
