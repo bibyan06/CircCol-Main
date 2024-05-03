@@ -56,8 +56,8 @@
 <?php
 // Database connection
 $servername = "localhost";
-$email = "email"; // Replace with your MySQL username
-$password = "password"; // Replace with your MySQL password
+$username = ""; // Replace with your MySQL username
+$password = ""; // Replace with your MySQL password
 $dbname = "CirCol";
 
 // Create connection
