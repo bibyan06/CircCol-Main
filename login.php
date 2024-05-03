@@ -43,7 +43,7 @@
                                     <button class="btn btn-light  btn-sm"> Create Account</button>
                                 </div>
                                 <div class="login-row donroo row no-margin">
-                                    <p>Don't have an Account? <a href="#">Sign Up</a></p>
+                                    <p>Don't have an Account? <a href="kent.html">Sign Up</a></p>
                                 </div>
                             </form>
                         </div>
