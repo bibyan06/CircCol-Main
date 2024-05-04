@@ -1,16 +1,8 @@
 /********** Template CSS **********/
 :root {
-    --primary: #009CFF;
+    --primary: #1F4690;
     --light: #F3F6F9;
     --dark: #191C24;
-}
-
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
 }
 
 
@@ -155,8 +147,8 @@
 
 .sidebar .navbar .dropdown-toggle::after {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top:27px;
+    left:140px;
     border: none;
     content: "\f107";
     font-family: "Font Awesome 5 Free";
