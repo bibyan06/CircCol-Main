@@ -2,3 +2,27 @@
     width: 100px; /* Set your desired width */
     height: auto; /* Maintain aspect ratio */
 }
+
+table {
+    margin: 0 auto;
+    width: 80%; 
+    height: 300px;
+    border-collapse: collapse;
+}
+
+/* Center the table headings */
+th {
+    text-align: center;
+    color:#1F4690;
+}
+
+/* Center the table cells */
+td {
+    text-align: center;
+}
+
+/* Make the font color of the "Edit" and "Delete" buttons white */
+.btn-primary,
+.btn-danger {
+    color: white;
+}

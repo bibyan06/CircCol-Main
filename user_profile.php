@@ -115,11 +115,11 @@
                 </div>
             </div>
             <div class="navbar-nav w-100">
-                <a href="dashboard.php" class="nav-item nav-link active"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
-                <a href="#" class="nav-item nav-link nav-link-orders" onclick="toggleOrdersSection()"><i class="fa fa-th me-2"></i>Orders</a>
-                <a href="#" class="nav-item nav-link" ><i class="fa fa-table me-2"></i>Wishlist</a>
-                <a href="#" class="nav-item nav-link nav-link-settings" onclick="toggleSettings()"><i class="fa fa-keyboard me-2"></i>Settings</a>
-                <a href="login.php" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Logout</a>
+                <a href="dashboard.php" class="nav-item nav-link active"><i class="bi bi-house-door-fill"></i></i>Dashboard</a>
+                <a href="#" class="nav-item nav-link nav-link-orders" onclick="toggleOrdersSection()"><i class="bi bi-basket3-fill"></i></i>Orders</a>
+                <a href="#" class="nav-item nav-link" ><i class="bi bi-heart-fill"></i></i>Wishlist</a>
+                <a href="#" class="nav-item nav-link nav-link-settings" onclick="toggleSettings()"><i class="bi bi-gear-fill"></i></i>Settings</a>
+                <a href="login.php" class="nav-item nav-link" style="width:100%;bottom:0;left:0;border-top:2px solid #e7e9ed;margin-top:300px;background:#f5f6fe"><i class="bi bi-box-arrow-in-left"></i></i>Logout</a>
             </div>
         </nav>
     </div>
@@ -258,27 +258,18 @@
             echo "User ID not provided.";
             } */
         ?> 
-       
-                    </div>
-                    <!-- Edit button -->
-                    <div class="text-end">
-                        <button class="btn btn-primary" onclick="editProfile()">Edit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Profile and Orders Panel End -->
 
         <!-- Footer Start -->
-        <div class="user_profile_footer fixed-bottom">
-            <div class="bg-light rounded-top p-4">
+        <div class="user_profile_footer" style="width: 100%;">
+            <div class="bg-light p-4" >
                 <div class="row">
                     <div>
                         &copy; <a href="#">CirCol</a>, All Right Reserved. 
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     </div>
     <!-- Footer End -->
     

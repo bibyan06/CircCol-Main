@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>Portal - Bootstrap 5 Admin Dashboard Template For Developers</title>
+    <title>CirCol</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -17,13 +17,10 @@
     
     <!-- App CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/portal.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/seller.css">
 
 </head> 
-<style>
-	.icon-holder {
-    display: none;
-    }
-</style>
+
 <body class="app">   	
     <header class="app-header fixed-top">	   	            
         <div class="app-header-inner">  
@@ -130,7 +127,7 @@
 							</div><!--//dropdown-menu-->					        
 				        </div><!--//app-utility-item-->
 			            <div class="app-utility-item">
-				            <a href="settings.html" title="Settings">
+				            <a href="settings.php" title="Settings">
 					            <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
 					            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"/>
@@ -142,8 +139,8 @@
 			            <div class="app-utility-item app-user-dropdown dropdown">
 				            <a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="assets/images/user.png" alt="user profile"></a>
 				            <ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
-								<li><a class="dropdown-item" href="account.html">Account</a></li>
-								<li><a class="dropdown-item" href="settings.html">Settings</a></li>
+								<li><a class="dropdown-item" href="account.php">Account</a></li>
+								<li><a class="dropdown-item" href="settings.php">Settings</a></li>
 								<li><hr class="dropdown-divider"></li>
 								<li><a class="dropdown-item" href="login.html">Log Out</a></li>
 							</ul>
@@ -221,9 +218,9 @@
 					        </a><!--//nav-link-->
 					        <div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
 						        <ul class="submenu-list list-unstyled">
-							        <li class="submenu-item"><a class="submenu-link" href="notifications.html">Notifications</a></li>
-							        <li class="submenu-item"><a class="submenu-link" href="account.html">Account</a></li>
-							        <li class="submenu-item"><a class="submenu-link" href="settings.html">Settings</a></li>
+							        <li class="submenu-item"><a class="submenu-link" href="notifications.php">Notifications</a></li>
+							        <li class="submenu-item"><a class="submenu-link" href="account.php">Account</a></li>
+							        <li class="submenu-item"><a class="submenu-link" href="settings.php">Settings</a></li>
 							        
 						        </ul>
 					        </div>
@@ -252,32 +249,7 @@
 							        <li class="submenu-item"><a class="submenu-link" href="404.html">404 page</a></li>
 						        </ul>
 					        </div>
-					    </li><!--//nav-item-->
-					    
-					    <li class="nav-item">
-					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-					        <a class="nav-link" href="charts.html">
-						        <span class="nav-icon">
-						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bar-chart-line" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
-	</svg>
-						         </span>
-		                         <span class="nav-link-text">Charts</span>
-					        </a><!--//nav-link-->
-					    </li><!--//nav-item-->
-					    
-					    <li class="nav-item">
-					        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-					        <a class="nav-link" href="help.html">
-						        <span class="nav-icon">
-						        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-</svg>
-						         </span>
-		                         <span class="nav-link-text">Help</span>
-					        </a><!--//nav-link-->
-					    </li><!--//nav-item-->					    
+					    </li><!--//nav-item-->				    
 				    </ul><!--//app-menu-->
 			    </nav><!--//app-nav-->
 			    <div class="app-sidepanel-footer">
@@ -285,40 +257,18 @@
 					    <ul class="app-menu footer-menu list-unstyled">
 						    <li class="nav-item">
 						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-						        <a class="nav-link" href="settings.html">
+						        <a class="nav-link" href="login.php">
 							        <span class="nav-icon">
-							            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"/>
-	  <path fill-rule="evenodd" d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"/>
-	</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+									<path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z"/>
+									<path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+									</svg>
 							        </span>
-			                        <span class="nav-link-text">Settings</span>
+			                        <span class="nav-link-text">Log Out</span>
 						        </a><!--//nav-link-->
 						    </li><!--//nav-item-->
 						    <li class="nav-item">
-						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-						        <a class="nav-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/admin-dashboard/portal-free-bootstrap-admin-dashboard-template-for-developers/">
-							        <span class="nav-icon">
-							            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>
-							        </span>
-			                        <span class="nav-link-text">Download</span>
-						        </a><!--//nav-link-->
-						    </li><!--//nav-item-->
-						    <li class="nav-item">
-						        <!--//Bootstrap Icons: https://icons.getbootstrap.com/ -->
-						        <a class="nav-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/admin-dashboard/portal-free-bootstrap-admin-dashboard-template-for-developers/">
-							        <span class="nav-icon">
-							            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v10.755S4 11 8 11s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
-	  <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-	</svg>
-							        </span>
-			                        <span class="nav-link-text">License</span>
-						        </a><!--//nav-link-->
-						    </li><!--//nav-item-->
+			                       
 					    </ul><!--//footer-menu-->
 				    </nav>
 			    </div><!--//app-sidepanel-footer-->
@@ -371,635 +321,267 @@
 					    </div><!--//table-utilities-->
 				    </div><!--//col-auto-->
 			    </div><!--//row-->
-			    
-			    <div class="row g-4">
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-	                            <!--<span class="badge bg-success">NEW</span>-->
-								<a class="app-card-link-mask" href="#" data-product-name="Info Tech Black"><img src="images/info_tech_black.png" alt="#"/></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    <h4 class="app-doc-title truncate mb-0" ><a href="#file-link">Info Tech Black</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span data-product-name="Shirt" class="text-muted">Type:</span> Shirt</li>
-										<li><span data-product-price="Php 250.00" class="text-muted">Price:</span> Php 250.00</li>
-									    <li><span data-product-price="S/M/L/XL"class="text-muted">Size:</span> S/M/L/XL</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->								    
-						    </div><!--//app-card-body-->
-						</div><!--//app-card-->
-				    </div><!--//col-->
-					
-				<div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-				<div class="app-card app-card-doc shadow-sm h-100" style="background-color: #f8f9fa;"> <!-- Add background-color style here -->
-					<div class="app-card-thumb-holder p-3">
-						<div class="app-card-thumb">
-							<a class="app-card-link-mask" href="#" data-product-name="Info Tech White"><img src="images/info_tech_white.png" alt="#"/></a>
-						</div>
-						<a class="app-card-link-mask" href="#"></a>
-					</div>
-					<div class="app-card-body p-3 has-card-actions">
-						
-						<h4 class="app-doc-title truncate mb-0"><a href="#file-link">Image lorem ipsum dolor sit amet</a></h4>
-						<div class="app-doc-meta">
-							<ul class="list-unstyled mb-0">
-								<li><span class="text-muted">Type:</span> Image</li>
-								<li><span class="text-muted">Size:</span> 8.2MB</li>
-								<li><span class="text-muted">Edited:</span> 2 days ago</li>
-							</ul>
-						</div><!--//app-doc-meta-->
-						
-						<div class="app-card-actions">
-							<div class="dropdown">
-								<div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-									<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-									</svg>
-								</div><!--//dropdown-toggle-->
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-										<path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-									</svg>View</a></li>
-									<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-									</svg>Edit</a></li>
-									<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-										<path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-									</svg>Download</a></li>
-									<li><hr class="dropdown-divider"></li>
-									<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										<path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-										<path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-									</svg>Delete</a></li>
-								</ul>
-							</div><!--//dropdown-->
-						</div><!--//app-card-actions-->
-					</div><!--//app-card-body-->
-				</div><!--//app-card-->
-			</div><!--//col-->
+	
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Product</th>
+				<th>Description</th>
+				<th>Product ID</th>
+				<th>Size</th>
+				<th>Quantity</th>
+				<th>Price</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<img src="images/info_tech_black.png" alt="Info Tech Black" style="max-width: 60px;">
+				</td>
+				<td>Info Tech Black</td>
+				<td>1</td>
+				<td>S/M/L/XL</td>
+				<td>10</td>
+				<td>Php 250.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/info_tech_white.png" alt="Info Tech White" style="max-width: 60px;">
+				</td>
+				<td>Info Tech White</td>
+				<td>2</td>
+				<td>S/M/L/XL</td>
+				<td>8</td>
+				<td>Php 250.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/circuits_limited_edition.png" alt="CircUITS Limited Edition" style="max-width: 60px;">
+				</td>
+				<td>CircUITS Limited Edition</td>
+				<td>3</td>
+				<td>S/M/L/XL</td>
+				<td>15</td>
+				<td>Php 280.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-pdf pdf-file"></i>
-	                            </span>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Pellentesque fringilla eleifend</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> PDF</li>
-									    <li><span class="text-muted">Size:</span> 3MB</li>
-									    <li><span class="text-muted">Opened:</span> 3 days ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
+			<td>
+					<img src="images/keystrap.png" alt="Key strap" style="max-width: 60px;">
+				</td>
+				<td>Key strap</td>
+				<td>4</td>
+				<td></td>
+				<td>15</td>
+				<td>Php 100.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-						</div><!--//app-card-->
-				    </div><!--//col-->
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-excel excel-file"></i>
-	                            </span>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Curabitur ac purus venenatis</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Spreadsheet</li>
-									    <li><span class="text-muted">Size:</span> 64KB</li>
-									    <li><span class="text-muted">Edited:</span> 1 week ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
+			<td>
+					<img src="images/lanyard.png" alt="Lanyard BLB" style="max-width: 60px;">
+				</td>
+				<td>Lanyard BLB</td>
+				<td>5</td>
+				<td></td>
+				<td>60</td>
+				<td>Php 160.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
+			
+			<td>
+					<img src="images/lanyard01.png" alt="Lanyard B&B" style="max-width: 60px;">
+				</td>
+				<td>Lanyard B&B</td>
+				<td>6</td>
+				<td></td>
+				<td>60</td>
+				<td>Php 160.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
+			
+			<td>
+					<img src="images/lanyard02.png" alt="Lanyard B&V" style="max-width: 60px;">
+				</td>
+				<td>Lanyard B&V</td>
+				<td>7</td>
+				<td></td>
+				<td>60</td>
+				<td>Php 160.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-						</div><!--//app-card-->
-				    </div><!--//col-->
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-alt text-file"></i>
-	                            </span>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Sed eleifend non libero congue fringilla</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Text</li>
-									    <li><span class="text-muted">Size:</span> 121KB</li>
-									    <li><span class="text-muted">Edited:</span> 2 weeks ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
+			<td>
+					<img src="images/lanyard03.png" alt="Lanyard GWB" style="max-width:60px;">
+				</td>
+				<td>Lanyard GWB</td>
+				<td>8</td>
+				<td></td>
+				<td>60</td>
+				<td>Php 160.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-						</div><!--//app-card-->
-				    </div><!--//col-->
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-video video-file"></i>
-	                            </span>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Duis venenatis mattis neque</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Video</li>
-									    <li><span class="text-muted">Size:</span> 36MB</li>
-									    <li><span class="text-muted">Edited:</span> 2 weeks ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
+			<td>
+					<img src="images/button_pin.png" alt="Lanyard GWB" style="max-width: 60px;">
+				</td>
+				<td>Button pin</td>
+				<td>9</td>
+				<td></td>
+				<td>67</td>
+				<td>Php 120.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-						</div><!--//app-card-->
-				    </div><!--//col-->
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-archive zip-file"></i>
-	                            </span>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Nullam ornare urna sed</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Zip</li>
-									    <li><span class="text-muted">Size:</span> 7MB</li>
-									    <li><span class="text-muted">Edited:</span> 3 weeks ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
+			<td>
+					<img src="images/tisat5.png" alt="Sir Kit's Plain Tee" style="max-width: 60px;">
+				</td>
+				<td>Sir Kit's Plain Tee</td>
+				<td>10</td>
+				<td>S/M/L/XL</td>
+				<td>50</td>
+				<td>Php 200.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-						</div><!--//app-card-->
-				    </div><!--//col-->
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-powerpoint ppt-file"></i>
-	                            </span>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Aenean scelerisque </a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> PPT</li>
-									    <li><span class="text-muted">Size:</span> 5.3MB</li>
-									    <li><span class="text-muted">Edited:</span> 3 weeks ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
+			<td>
+					<img src="images/sirkits_hoodie.png" alt="Sir Kit's Hoodie" style="max-width: 60px;">
+				</td>
+				<td>Sir Kit's Hoodie</td>
+				<td>11</td>
+				<td>S/M/L/XL</td>
+				<td>50</td>
+				<td>Php 500.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-						</div><!--//app-card-->
-				    </div><!--//col-->
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-excel excel-file"></i>
-	                            </span>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Ut viverra leo sapien</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Spreadsheet</li>
-									    <li><span class="text-muted">Size:</span> 26KB</li>
-									    <li><span class="text-muted">Edited:</span> 1 month ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
+			<td>
+					<img src="images/tumbler.png" alt="Sir Kit's Tumbler" style="max-width: 60px;">
+				</td>
+				<td>Sir Kit's Tumbler</td>
+				<td>12</td>
+				<td></td>
+				<td>50</td>
+				<td>Php 250.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-						</div><!--//app-card-->
-				    </div><!--//col-->
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-alt text-file"></i>
-	                            </span>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Sed eleifend non libero congue fringilla</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Text</li>
-									    <li><span class="text-muted">Size:</span> 45KB</li>
-									    <li><span class="text-muted">Edited:</span> 1 month ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
+			<td>
+					<img src="images/mousepad.png" alt="Sir Kit's Mousepad" style="max-width: 60px;">
+				</td>
+				<td>Sir Kit's Mousepad</td>
+				<td>13</td>
+				<td></td>
+				<td>50</td>
+				<td>Php 150.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-						</div><!--//app-card-->
-				    </div><!--//col-->
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm  h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <div class="app-card-thumb">
-	                                <img class="thumb-image" src="assets/images/doc-thumb-2.jpg" alt="">
-	                            </div>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Image condimentum</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> Image</li>
-									    <li><span class="text-muted">Size:</span> 7.1MB</li>
-									    <li><span class="text-muted">Edited:</span> 2 months ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
+			<td>
+					<img src="images/keyboard.png" alt="Sir Kit's Keyboard" style="max-width: 60px;">
+				</td>
+				<td>Sir Kit's Keyboard</td>
+				<td>14</td>
+				<td></td>
+				<td>5</td>
+				<td>Php 2000.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
 
-						</div><!--//app-card-->
-				    </div><!--//col-->
-				    <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
-					    <div class="app-card app-card-doc shadow-sm h-100">
-						    <div class="app-card-thumb-holder p-3">
-							    <span class="icon-holder">
-	                                <i class="fas fa-file-pdf pdf-file"></i>
-	                            </span>
-	                             <a class="app-card-link-mask" href="#file-link"></a>
-						    </div>
-						    <div class="app-card-body p-3 has-card-actions">
-							    
-							    <h4 class="app-doc-title truncate mb-0"><a href="#file-link">Interdum semper</a></h4>
-							    <div class="app-doc-meta">
-								    <ul class="list-unstyled mb-0">
-									    <li><span class="text-muted">Type:</span> PDF</li>
-									    <li><span class="text-muted">Size:</span> 2.5MB</li>
-									    <li><span class="text-muted">Opened:</span> 3 months ago</li>
-								    </ul>
-							    </div><!--//app-doc-meta-->
-							    
-							    <div class="app-card-actions">
-								    <div class="dropdown">
-									    <div class="dropdown-toggle no-toggle-arrow" data-bs-toggle="dropdown" aria-expanded="false">
-										    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-			  <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-			</svg>
-									    </div><!--//dropdown-toggle-->
-									    <ul class="dropdown-menu">
-										    <li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.134 13.134 0 0 0 1.66 2.043C4.12 11.332 5.88 12.5 8 12.5c2.12 0 3.879-1.168 5.168-2.457A13.134 13.134 0 0 0 14.828 8a13.133 13.133 0 0 0-1.66-2.043C11.879 4.668 10.119 3.5 8 3.5c-2.12 0-3.879 1.168-5.168 2.457A13.133 13.133 0 0 0 1.172 8z"/>
-	  <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
-	</svg>View</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
-	</svg>Edit</a></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-	  <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-	</svg>Download</a></li>
-	                                        <li><hr class="dropdown-divider"></li>
-											<li><a class="dropdown-item" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash me-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-	  <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-	</svg>Delete</a></li>
-										</ul>
-								    </div><!--//dropdown-->
-						        </div><!--//app-card-actions-->
-								    
-						    </div><!--//app-card-body-->
-
-						</div><!--//app-card-->
-				    </div><!--//col-->
-			    </div><!--//row-->
-			    <nav class="app-pagination mt-5">
-					<ul class="pagination justify-content-center">
-						<li class="page-item disabled">
-							<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-					    </li>
-						<li class="page-item active"><a class="page-link" href="#">1</a></li>
-						<li class="page-item"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item">
-						    <a class="page-link" href="#">Next</a>
-						</li>
-					</ul>
-				</nav><!--//app-pagination-->
-		    </div><!--//container-fluid-->
-	    </div><!--//app-content-->
-    </div><!--//app-wrapper-->    					
+			<td>
+					<img src="images/sticker_set.png" alt="Sir Kit's Sticker Set" style="max-width: 60px;">
+				</td>
+				<td>Sir Kit's Sticker Set/td>
+				<td>15</td>
+				<td></td>
+				<td>20</td>
+				<td>Php 50.00</td>
+				<td>
+					<button class="btn btn-primary">Edit</button>
+					<button class="btn btn-danger">Delete</button>
+				</td>
+			</tr>
+			<!-- Repeat similar structure for other products -->
+		</tbody>
+		<tfoot>
+			<!-- Any footer information can be added here -->
+		</tfoot>
+	</table>
+			   
 
  
-    <!-- Javascript -->          
+    <!-- Javascript -->    
+	<script>
+    document.getElementById('page-link-2').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        
+        // Fetch the next set of products (you'll need to implement this)
+        fetchNextPageProducts();
+    });
+
+    function fetchNextPageProducts() {
+        // Example of fetching data (you'll need to replace this with your actual fetch logic)
+        // Assuming you're using some API to fetch products
+        fetch('/api/products?page=2')
+            .then(response => response.json())
+            .then(data => {
+                // Append the new products to the container
+                const container = document.getElementById('product-container');
+                data.products.forEach(product => {
+                    container.innerHTML += `
+                        <div class="col-6 col-md-4 col-xl-3 col-xxl-2">
+                            <!-- Your product card HTML goes here -->
+                        </div>
+                    `;
+                });
+            })
+            .catch(error => console.error('Error fetching products:', error));
+    }
+	</script>      
     <script src="assets/plugins/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
 
