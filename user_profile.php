@@ -97,18 +97,19 @@
 <body>
      <!-- Sidebar Start -->
      <div class="sidebar pe-4 pb-3">
-        <nav class="navbar bg-light navbar-light">
-            <a href="dashboard.php"><img src="images/circol logo.png" alt="#" style="width: 150px; height:10px auto; margin-left:35px; margin-top:10px;"/></a>
-            <div class="d-flex align-items-center ms-4 mb-4">
-                <div class="ms-3">
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                            <img class="rounded-circle me-lg-2" src="images/profile.jpg" alt="" style="width: 40px; height: 40px; margin-top:20px; margin-left:.2px;">
-                            <span class="d-none d-lg-inline-flex">John Doe</span>
-                        </a>
+     <nav class="navbar bg-light navbar-light">
+        <a href="dashboard.php"><img src="images/circol logo.png" alt="#" style="width: 150px; height:10px auto; margin-left:35px; margin-top:10px;"/></a>
+        <div class="d-flex align-items-center ms-4 mb-4">
+            <div class="ms-3">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <img class="rounded-circle me-lg-2" src="images/profile.jpg" alt="" style="width: 40px; height: 40px; margin-top:20px; margin-left:.2px;">
+                        <span class="d-none d-lg-inline-flex">John Doe</span>
+                        <h5 class="">User</h5>
+                    </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
-                            <a href="#" class="dropdown-item" onclick="toggleSettings()">My Profile</a>
-                            <a href="#" class="dropdown-item">Settings</a>
+                            <a href="user_profile.php" class="dropdown-item" onclick="toggleSettings()">My Profile</a>
+                            <a href="#" class="dropdown-item" onclick="toggleSettings()">Settings</a>
                         </div>
                     </div>
                 </div>
