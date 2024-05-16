@@ -229,7 +229,7 @@
                <div class="project_box" data-product-name="Shirt">
                   <div class="dark_white_bg" ><img  src="images/info_tech_white.png" alt="#"/></div>
                   <h3 data-product-name="Info Tech White">Info Tech White</h3>
-                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <h4 data-product-price="Php 250.00">Php 250.00</h4>
                   <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                </div>
@@ -237,7 +237,7 @@
                <div class="project_box" data-product-name="Shirt">
                   <div class="dark_white_bg" ><img  src="images/circuits_limited_edition.png" alt="#"/></div>
                   <h3 data-product-name="CircUITS Limited Edition">CircUITS Limited Edition</h3>
-                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <h4 data-product-price="Php 280.00">Php 280.00</h4>
                   <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                </div>
@@ -245,7 +245,7 @@
                <div class="project_box" data-product-name="Others">
                   <div class="dark_white_bg" ><img  src="images/keystrap.png" alt="#"/></div>
                   <h3 data-product-name="Key Strap">Key strap</h3>
-                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <h4 data-product-price="Php 100.00">Php 100.00</h4>
                   <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                </div>
@@ -253,7 +253,7 @@
                <div class="project_box" data-product-name="Lanyard">
                   <div class="dark_white_bg" ><img  src="images/lanyard.png" alt="#"/></div>
                   <h3 data-product-name="Lanyard BLB">Lanyard BLB</h3>
-                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <h4 data-product-price="Php 160.00">Php 160.00</h4>
                   <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                </div>
@@ -261,7 +261,7 @@
                <div class="project_box" data-product-name="Lanyard">
                   <div class="dark_white_bg" ><img  src="images/lanyard01.png" alt="#"/></div>
                   <h3 data-product-name="Lanyard B&B">Lanyard B&B</h3>
-                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <h4 data-product-price="Php 160.00">Php 160.00</h4>
                   <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                </div>
@@ -269,7 +269,7 @@
                <div class="project_box" data-product-name="Lanyard">
                   <div class="dark_white_bg" ><img  src="images/lanyard02.png" alt="#"/></div>
                   <h3 data-product-name="Lanyard B&V">Lanyard B&V </h3>
-                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <h4 data-product-price="Php 160.00">Php 160.00</h4>
                   <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                </div>
@@ -285,7 +285,7 @@
                <div class="project_box" data-product-name="Others">
                   <div class="dark_white_bg" ><img  src="images/button_pin.png" alt="#"/></div>
                   <h3 data-product-name="Button pin">Button pin</h3>
-                  <h4 data-product-price="Php 320.00">Php 320.00</h4>
+                  <h4 data-product-price="Php 120.00">Php 120.00</h4>
                   <button class="variation_btn" data-toggle="modal" data-target="#variationModal" >Add to Cart</button>
                   <button type="button" class="btn btn-outline-danger heart-btn"><i class="fa fa-heart"></i></button>
                </div>
