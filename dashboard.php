@@ -373,6 +373,44 @@
         });
 
         $(document).ready(function() {
+    // Function to handle click on "Add to Cart" button
+    $('#addToCartBtn').click(function() {
+        // Get product details from the modal
+        var imgSrc = $('#modalImage').attr('src');
+        var productName = $('#modalName').text().replace('Product: ', '').trim();
+        var productPrice = parseFloat($('#modalPrice').text().replace('Price: Php ', '').trim());
+        var quantity = parseInt($('#quantityInput').val());
+
+        // Calculate total amount
+        var totalAmount = productPrice * quantity;
+
+        // AJAX request to send product details to PHP script
+        $.ajax({
+            url: 'addToCart.php',
+            method: 'POST',
+            data: {
+                imgSrc: imgSrc,
+                productName: productName,
+                productPrice: productPrice,
+                quantity: quantity,
+                totalAmount: totalAmount
+            },
+            success: function(response) {
+                // Display success message or handle response as needed
+                console.log(response);
+                // Redirect to cart page
+                window.location.href = 'cart.php';
+            },
+            error: function(xhr, status, error) {
+                // Handle error
+                console.error(error);
+            }
+        });
+    });
+});
+
+
+        $(document).ready(function() {
         // Function to populate variation options in the modal and update image
         function populateVariations(variations) {
             var select = $('#variationSelect');
